@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Customers so far</title>
+    </head>
+
+    <h1>The Customer List so far:</h1>
+
+    <ul id="app">
+        <li v-if="!customers.length">Sorry, there are no customers.</li>
+        <li v-for="customer in customers">
+            first name -> {{ customer.firstName }}
+            last name -> {{ customer.firstName }}
+            email -> {{ customer.email }}
+            mobile -> {{ customer.mobile }}
+        </li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/start.js"></script>
+
+</html>
