@@ -9,6 +9,11 @@ public class Customer {
     private Long id;
     private String firstName;
 
+    private String lastName;
+    private String email;
+    private String mobile;
+    private Date dateOfBirth;
+
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
@@ -38,10 +43,10 @@ public class Customer {
         this.id = id;
     }
 
-    private String lastName;
-    private String email;
-    private String mobile;
-    private Date dateOfBirth;
+
+
+    public Customer() {
+    }
 
     public Customer(long id, String firstName, String lastName, String email, String mobile) {
         this.id = id;
